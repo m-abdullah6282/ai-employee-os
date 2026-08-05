@@ -30,6 +30,7 @@ class Settings(BaseSettings):
 
     # AI
     openai_api_key: str = ""
+    groq_api_key: str = ""
     anthropic_api_key: str = ""
     default_llm_provider: str = "openai"
     default_model: str = "gpt-4o"
