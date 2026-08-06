@@ -63,6 +63,7 @@ class Settings(BaseSettings):
     smtp_user: str = ""
     smtp_password: str = ""
     smtp_from: str = "noreply@aiemployee.com"
+    mailtrap_api_token: str = ""
 
     
 
