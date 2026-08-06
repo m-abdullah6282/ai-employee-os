@@ -58,7 +58,13 @@ class Settings(BaseSettings):
     aws_region: str = "us-east-1"
 
     log_level: str = "INFO"
+    smtp_host: str = "sandbox.smtp.mailtrap.io"
+    smtp_port: int = 2525
+    smtp_user: str = ""
+    smtp_password: str = ""
+    smtp_from: str = "noreply@aiemployee.com"
 
+    
 
 @lru_cache
 def get_settings() -> Settings:
